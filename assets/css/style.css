@@ -1,5 +1,3 @@
-@import url("reset.css");
-
 body {
 	background: url("../images/concrete_seamless.png");
 	font-size: 18px;
@@ -10,21 +8,9 @@ body {
 
 * {
 	box-sizing: border-box;
-	margin: 0;
-}
-
-html, body {
-	height: 100%;
 }
 
 /*general*/
-
-.wrapper {
-	min-height: 100%;
-	height: auto !important; 
-	height: 100%;
-	margin: 0 auto -100px; 
-}
 
 .container {
 	width: 100%;
@@ -86,34 +72,24 @@ nav {
 	float: right;
 	margin-top: 25px;
 }
-nav li {
+nav a {
+	color: #999;
+	text-decoration: none;
 	margin-left: 15px;
 	display: inline-block;
 	border-left: 1px solid #efefef;
 	padding-left: 15px;
 	line-height: 18px;
 }
-nav a {
-	color: #999;
-	text-decoration: none;
-}
-nav a:hover {
-	color: #666;
-}
-nav li:first-child {
+nav a:first-child {
 	border-left: 0 none;
-	margin-left: 0;
-	padding-left: 0;
 }
 
 /*footer*/
 
-footer, .push {
-	height: 100px;
-}
-
 footer {
 	background: #666;
+	color: #fff;
 	padding: 30px 0;
 	clear: both;
 	border-top: 8px solid #4aaaa5;
@@ -140,23 +116,19 @@ h3,
 	margin-bottom: 15px;
 	line-height: 22px;
 }
-.sidebar li {
-	float: left;
+.social {
 	width: 62px;
 	height: 62px;
 	margin-top: 8px;
-	margin-right: 10px;
+	margin-right: 5px;
 }
-.sidebar img {
-	max-width: 100%;
-}
-.sidebar li:last-child {
+.social:last-child {
 	margin-right: 0;
 }
 
 /*main*/
 
-main {
+#main-container {
 	padding-top: 130px;
 }
 .main-section {
@@ -241,78 +213,3 @@ input[type=submit] {
 	padding: 10px 30px;
 	cursor: pointer;
 }
-
-@media only screen and (max-width: 980px) {
-	.container {
-		padding: 0 20px;
-		max-width: 768px;
-	}
-	main.container {
-		padding-top: 130px;
-	}
-	.main-section {
-		max-width: 420px;
-	}
-	.work {
-		width: 100%;
-	}
-	.auth-image {
-		width: 100%;
-		margin-bottom: 20px;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	.main-section,
-	.sidebar {
-		max-width: 100%;
-	}
-	main {
-		overflow: auto;
-	}
-	.work {
-		width: 47%;
-		margin-bottom: 10px;
-	}
-	.work:nth-child(even){
-		margin-right: 0;
-	} 
-	.work:nth-child(odd) {
-		float: right;
-	}
-	.auth-image {
-		width: 50%;
-	}
-	.sidebar {
-		margin-bottom: 40px;
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	#masthead {
-		position: static;
-		margin-bottom: 20px;
-	}
-	header .container {
-		padding: 0;
-	}
-	main.container {
-		padding-top: 0;
-	}
-	#logo,
-	.work,
-	.auth-image {
-		width: 100%;
-	}
-	nav {
-		text-align: center;
-		width: 100%;
-		margin: 15px 0;
-	}
-	nav a {
-		width: 30%;
-		padding-left: 0;
-		margin-left: 0;
-	}
-}
-
