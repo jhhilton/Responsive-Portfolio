@@ -228,16 +228,16 @@ input[type=submit] {
  		width: 100%;
  	}
 
-/* 	.auth-image {
+ 	.auth-image {
 
 	width: 100%;
 	padding-bottom: 15px;
 
- 	}*/
+ 	}
 
  }
 
-@media only screen and (max-width: 768px){
+@media screen and (min-width : 641px) and  (max-width : 768px) {
 
 .container{
 
@@ -261,10 +261,98 @@ margin-right:5%;
 
 .auth-image {
 
-width: 100%;
-padding-bottom: 15px;
+padding-bottom: 10px;
 
  }
 
+.sidebar {
+
+max-width:90%;
+
+/*Don't know why 90% worked. Thought it should be 95%*/
+
+margin-left:5%;
+margin-right:5%;
+
 }
 
+}
+
+@media only screen and (max-width: 460px){
+
+#masthead {
+ position: static;
+ margin-bottom: 20px;
+ 	}
+
+#logo {
+
+width:100%;
+
+/*Where to use width verses max-width?*/
+
+}
+
+nav {
+
+ text-align: center;
+ width: 100%;
+
+ }
+
+nav a {
+
+	padding-left: 0px;
+	margin-left:0px;
+ 	width: 30%;
+
+ 	}
+
+.container{
+
+max-width:95%;
+
+}
+
+#main-container{
+
+padding-top:0px;
+
+}
+
+.main-section{
+
+width: 95%;
+margin-left:5%;
+margin-right:5%;
+
+}
+
+.work {
+
+ width: 100%;
+
+ }
+
+.auth-image {
+
+width:100%;
+padding-bottom: 10px;
+
+ }
+
+.sidebar {
+
+max-width:95%;
+
+/*Don't know why 90% worked. Thought it should be 95%*/
+
+margin-left:5%;
+
+/*margin-right:5%;*/
+
+}
+
+}
+
+}
